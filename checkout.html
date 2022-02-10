@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a133489af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <div class="left_side">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.jpg" alt="logo">BRAN<span>D</span>
+                </a>
+                <div class="header_form" action="#">
+                    <div class="browse">
+                        <li class="menu_list menu_list_browse"><a href="#" class="browse_txt_menu">Browse<i
+                                    class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="mega_box flex_column">
+                                <div class="menu_item">
+                                    <h3 class="item_hedding">Women</h3>
+                                    <a class="mega_link" href="#">Dresses</a>
+                                    <a class="mega_link" href="#">Tops</a>
+                                    <a class="mega_link" href="#">Sweater/Knits</a>
+                                    <a class="mega_link" href="#">Jacket/Coats</a>
+                                    <a class="mega_link" href="#">Blazers</a>
+                                    <a class="mega_link" href="#">Denim</a>
+                                    <a class="mega_link" href="#">Leggins/Pants</a>
+                                    <a class="mega_link" href="#">Skirt/Shorts</a>
+                                    <a class="mega_link" href="#">Accessories</a>
+                                </div>
+                                <div class="menu_item menu_item_header">
+                                    <h3 class="item_hedding">Men</h3>
+                                    <a class="mega_link" href="#">Teels/Tank tops</a>
+                                    <a class="mega_link" href="#">Shirt/Polos</a>
+                                    <a class="mega_link" href="#">Sweaters</a>
+                                    <a class="mega_link" href="#">Sweater/Hoofies</a>
+                                    <a class="mega_link" href="#">Jacket/Vests</a>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <form action="" class="text_submit_btn">
+                        <input type="text" placeholder="Search for Item...">
+                        <button class="search_button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="cart">
+                    <a href="#">
+                        <img src="img/cart.svg" alt="cart">
+                    </a>
+                    <div class="cart_dropbox">
+                        <div class="product_cart_drop product_cart_drop-first">
+                            <div class="product_cart_drop_icon">
+                                <a href="singlePage.html">
+                                    <img class="product_cart_drop_img" src="img/cart_drop1.png" alt="icon">
+                                </a>
+                                <div class="product_cart_ttf">
+                                    <div class="product_cart_drop_descr">
+                                        <div class="product_cart_drop_name">rebox zane</div>
+                                        <div class="rating">
+                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                        </div>
+                                        <div class="product_cart_drop_price">1 <span>x</span> $250</div>
+                                    </div>
+                                    <div class="delete_cart_product">
+                                        <a href="#" class="delete_cart_product_link">
+                                            <i class="fas fa-times-circle fas_cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product_cart_drop product_cart_drop-second">
+                            <div class="product_cart_drop_icon">
+                                <a href="singlePage.html">
+                                    <img class="product_cart_drop_img" src="img/cart_drop2.png" alt="icon">
+                                </a>
+                                <div class="product_cart_ttf">
+                                    <div class="product_cart_drop_descr">
+                                        <div class="product_cart_drop_name">rebox zane</div>
+                                        <div class="rating">
+                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                        </div>
+                                        <div class="product_cart_drop_price">1 <span>x</span> $250</div>
+                                    </div>
+                                    <div class="delete_cart_product">
+                                        <a href="#" class="delete_cart_product_link">
+                                            <i class="fas fa-times-circle fas_cart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="total_price">
+                            <div class="total">total</div>
+                            <div class="price">$500</div>
+                        </div>
+                        <a href="checkout.html"><button class="cart_dropbox_button" type="submit">checkout</button></a>
+                        <a href="shoppingCart.html"><button class="cart_dropbox_button go_to_start" type="submit">go to
+                                cart</button></a>
+                    </div>
+                </div>
+                <a class="my_account_button" href="#">My Account
+                    <i class="fa fa-caret-down arrow_my_account"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="container navigation_container">
+            <ul class="menu">
+                <li class="menu_list"><a class="menu_link" href="index.html">Home</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list"><a class="menu_link" href="#">man</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list"><a class="menu_link" href="#">women</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list"><a class="menu_link" href="#">kids</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list last"><a class="menu_link" href="#">accoseriese</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list last"><a class="menu_link" href="#">featured</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">Man</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu_list last"><a class="menu_link" href="#">hot deals</a>
+                    <div class="mega_box">
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="mega_link" href="#">Blazers</a>
+                            <a class="mega_link" href="#">Denim</a>
+                            <a class="mega_link" href="#">Leggins/Pants</a>
+                            <a class="mega_link" href="#">Skirt/Shorts</a>
+                            <a class="mega_link" href="#">Accessories</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <h3 class="item_hedding item_hedding_second">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                        </div>
+                        <div class="menu_item">
+                            <h3 class="item_hedding">WOMEN</h3>
+                            <a class="mega_link" href="#">Dresses</a>
+                            <a class="mega_link" href="#">Tops</a>
+                            <a class="mega_link" href="#">Sweater/Knits</a>
+                            <a class="mega_link" href="#">Jacket/Coats</a>
+                            <a class="link_img" href="#"><img src="img/mega_menu_img.png" alt="img" class="set_img"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="new_arrivals">
+        <div class="container elements_container">
+            <h3 class="new_arrivals_header">new arrivals</h3>
+            <nav class="new_arrivals_nav">
+                <a class="link_arrivals" href="index.html">home</a>&nbsp;/&nbsp;
+                <a class="link_arrivals" href="#">men</a>&nbsp;/&nbsp;
+                <a class="current_link" href="#">new arrivals</a>
+            </nav>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="container">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button box_to_info_header" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            01.shipping adress
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="block_register_or_check">
+                                <form class="from_block_check" action="">
+                                    <div class="block_check">
+                                        <h4 class="block_check_subheader">check as a guest or register</h4>
+                                        <div class="block_check_info">Register with us for future convenience</div>
+                                        <div class="checked_box">
+                                            <input class="check_radio" type="radio" name="check_regist"
+                                                id="check_guest">
+                                            <label class="check_text" for="check_guest">checkout as guest</label>
+                                        </div>
+                                        <div class="checked_box checked_box_last">
+                                            <input class="check_radio" type="radio" name="check_regist" id="register">
+                                            <label class="check_text" for="register">register</label>
+                                        </div>
+
+                                        <h4 class="block_check_subheader">register and save time!</h4>
+                                        <div class="block_check_info">Register with us for future convenience</div>
+                                        <div class="block_check_info_plus"><i class="fas fa-angle-double-right"></i>Fast
+                                            and
+                                            easy
+                                            checkout</div>
+                                        <div class="block_check_info_plus block_check_info_plus_last"><i
+                                                class="fas fa-angle-double-right"></i>Easy acces to
+                                            your order history and status</div>
+                                        <button class="block_register_or_check_btn check_btn "
+                                            type="submit">continue</button>
+                                    </div>
+                                </form>
+                                <form class="block_register">
+                                    <h4 class="block_check_subheader">already registed?</h4>
+                                    <div class="please_log_in_below">Please log in below</div>
+                                    <div class="subscribe_inp">email adress</div>
+                                    <input required type="email" name="email_adress" id="">
+                                    <div class="subscribe_inp">password</div>
+                                    <input required type="password" name="password" id="">
+                                    <div class="required_fileds">Required Fileds</div>
+                                    <div class="log_forgot">
+                                        <button class="block_register_or_check_btn log_in " type="submit">log
+                                            in</button>
+                                        <div class="forgot_pass">
+                                            <a href=""> Forgot Password ?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed box_to_info_header " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo ">
+                            02. billing information
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed box_to_info_header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            03. shipping information
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed box_to_info_header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            04. shipping method
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed box_to_info_header " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            05. payment method
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header " id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed box_to_info_header box_to_info_header_last"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                            06. order review
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingSix">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe_section">
+        <div class="opacity_img"></div>
+        <div class="container subscribe_container">
+            <div class="left_side_offer">
+                <div class="left_side_content">
+                    <img src="img/client.png" alt="" class="client_comment">
+                    <div class="infoblock">
+                        <p class="infoblock_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                            purus
+                            condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="user_name_pink">Bin Burhan</p>
+                        <p class="dhaka_bd">Dhaka, Bd</p>
+                        <div class="some_comments">
+                            <div class="comments_btn"></div>
+                            <div class="comments_btn"></div>
+                            <div class="comments_btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side_offer">
+                <div class="subscribe_right_side">
+                    <form action="#" class="subscribe_content_right_side">
+                        <h1>SUBSCRIBE</h1>
+                        <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
+                        <div class="input_form">
+                            <input required type="email" placeholder="Enter Your Email" class="sub_input">
+                            <input required type="submit" class="sub_btn" value="Subscribe">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_left_side">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.jpg" alt="logo">BRAN<span>D</span>
+                </a>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate
+                    multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                    processes and cross-unit
+                </p>
+                <p class="footer_paragraph">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="footer_column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Shop</a></li>
+                    <li class="hover_link"><a class="footer_link" href="index.html">Home</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">About</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">How It Works</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li class="hover_link"><a class="footer_link" href="#">Tearms &amp; Condition</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">Privacy Policy</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">How to Buy</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">How to Sell</a></li>
+                    <li class="hover_link"><a class="footer_link" href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="footer_column">
+                <h3>SHOP CATEGORY</h3>
+                <ul>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Men</a></li>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Women</a></li>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Child</a></li>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Apparel</a></li>
+                    <li class="hover_link"><a class="footer_link" href="product.html">Brows All</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy_social">
+            <div class="container bottom_container">
+                <div class="copy">&copy;&nbsp;2017 Brand All Rights Reserved.</div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#" class=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
